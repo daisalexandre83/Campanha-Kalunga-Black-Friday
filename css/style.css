@@ -120,7 +120,7 @@ h6,
 }
 
 .swiper {
-    width: 600px;
+    width: 850px;
     height: 300px;
   }
 
@@ -129,16 +129,21 @@ h6,
   }
 
   .swiper-slide-mobile img{
-    width: 60%;
+    width: 45%;
   }
 
-  .swiper-slide-desktop{
+   .swiper-slide-desktop{
       display: none;
-  }
+  } 
 
 
   #swiper-button-next-navigations{
-      margin-right: 255px;
+      padding-right: 515px;
+  }
+
+  #buy-button{
+    background-color: #f2ac3a ;
+    border: none;
   }
 
 
@@ -177,18 +182,22 @@ h6,
        display:none;
     }
 
-    .swiper-slide-desktop{
+     .swiper-slide-desktop{
         display: block;
         margin-top: 60px;
     }
 
     .swiper-slide-desktop img{
         width: 100%;
+    }  
+
+    #swiper-button-prev-navigations{
+        margin-right: -12px;
     }
 
     #swiper-button-next-navigations{
-       margin-right: 127px;
-      
-    }
+        position: absolute;
+        right: -504px;
+    } 
 
 }
