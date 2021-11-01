@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Teste Kalunga</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -27,60 +30,45 @@
             </div>
         </div>
     </header>
-
     <main>
-        <div class="carousel">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                      <a href="https://www.kalunga.com.br/prod/notebook-ideapad-s145-lenovo-processador-core-i7-8gb-de-memoria-256gb-ssd-de-armazenamento-tela-de-15-6-cx-1-un/222504">
-                        <div class="carousel-mobile">
-                            <img src="images/carousel-mobile-1.png">
-                        </div>  
-                        <div class="carousel-desktop">
-                            <img src="images/carousel-desktop-1.png">
-                        </div>
-                      </a>
-                  </div>
-                  <div class="item">
-                      <a href="https://www.kalunga.com.br/prod/caixa-de-som-bluetooth-120w-rms-pulse-bazooka-preta-sp362-pulse-cx-1-un/145099">
-                         <div class="carousel-mobile">
-                             <img src="images/carousel-mobile-2.png"/>
-                         </div> 
-                         <div class="carousel-desktop">
-                            <img src="images/carousel-desktop-2.png"/>
-                         </div>
-                      </a>
-                  </div>
-                  <div class="item">
-                        <a href="https://www.kalunga.com.br/prod/mouse-sem-fio-logitech-trackball-mx-ergo-com-ajuste-de-angulo-usb-unifying-ou-bluetooth-para-ate-3-dispositivos-recarregavel-cx-1-un/442827">
-                            <div class="carousel-mobile">
-                                <img src="images/carousel-mobile-3.png" >
-                            </div>
-                            <div class="carousel-desktop">
-                                <img src="images/carousel-desktop-3.png"/>
-                            </div>
-                        </a>  
-                  </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                  <a href="https://www.kalunga.com.br/prod/notebook-ideapad-s145-lenovo-processador-core-i7-8gb-de-memoria-256gb-ssd-de-armazenamento-tela-de-15-6-cx-1-un/222504">
+                    <div  class="swiper-slide-mobile">
+                        <img src="images/carousel-mobile-1.png">
+                    </div>
+                    <div class="swiper-slide-desktop">
+                        <img src="images/carousel-desktop-1.png">
+                    </div>
+                  </a>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-        </div>
-                 
+              <div class="swiper-slide">
+                  <a href="https://www.kalunga.com.br/prod/caixa-de-som-bluetooth-120w-rms-pulse-bazooka-preta-sp362-pulse-cx-1-un/145099">
+                    <div class="swiper-slide-mobile">
+                        <img src="images/carousel-mobile-2.png">
+                    </div>
+                    <div class="swiper-slide-desktop">
+                        <img src="images/carousel-desktop-2.png"/>
+                    </div>
+                  </a>
+                </div>
+              <div class="swiper-slide">
+                  <a href="https://www.kalunga.com.br/prod/mouse-sem-fio-logitech-trackball-mx-ergo-com-ajuste-de-angulo-usb-unifying-ou-bluetooth-para-ate-3-dispositivos-recarregavel-cx-1-un/442827">
+                    <div class="swiper-slide-mobile">
+                        <img src="images/carousel-mobile-3.png">
+                    </div>
+                    <div  class="swiper-slide-desktop">
+                        <img src="images/carousel-desktop-3.png">
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="swiper-button-prev" id="swiper-button-prev-navigations"></div>
+            <div class="swiper-button-next" id="swiper-button-next-navigations"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
     </main>
-
     <section class="categorias">
         <div class="container-fluid container-sm">
             <div class="row">
@@ -95,7 +83,6 @@
             </div>
         </div>
     </section>
-
     <section>
         <div class="container">
             <div class="container-box-prod">
@@ -144,7 +131,6 @@
             </div>
         </div>
     </section>
-
     <section>
         <div class="container">
             <div class="row">
@@ -239,7 +225,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
                             <div class="d-none">
@@ -251,7 +236,6 @@
                                     title="Borracha Studio Mercur PT 1 UN"
                                     class="img-prod-lazy img-fluid"
                                     src="images/070444d.png">
-
                             </a>
                         </div>
                         <div class="col col-xs-8 col-sm-8 col-md-12 col-lg-12">
@@ -261,7 +245,6 @@
                                         title="Borracha Studio Mercur PT 1 UN">
                                         <h1 class="text-left mt-2 text-dark">Borracha Studio Mercur PT 1 un
                                             </h1>
-
                                     </a> </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left ">
                                     <div class="text-secondary small"><strike></strike></div> <span
@@ -285,7 +268,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
                             <a href=https://www.kalunga.com.br/prod/agenda-a5-preta-3505-dac-pt-1-un/007238
@@ -302,7 +284,6 @@
                                         href=https://www.kalunga.com.br/prod/agenda-a5-preta-3505-dac-pt-1-un/007238
                                         title="Agenda A5 Preta 3505 Dac PT 1 UN">
                                         <h1 class="text-left mt-2 text-dark">Agenda A5 Preta 3505 Dac PT 1 UN</h1>
-
                                     </a> </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left ">
                                     <div class="text-secondary small"><strike></strike></div> <span
@@ -326,7 +307,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
                             <a href="https://www.kalunga.com.br/prod/pincel-marca-texto-c-6-canetas-5-cores-oval-bt-6-un/620321"
@@ -342,7 +322,6 @@
                                         href="https://www.kalunga.com.br/prod/pincel-marca-texto-c-6-canetas-5-cores-oval-bt-6-un/620321"
                                         title="Pincel marca texto c 6 canetas 5 cores Oval BT 6 UN">
                                         <h1 class="text-left mt-2 text-dark">Pincel marca texto c 6 canetas 5 cores Oval BT 6 UN</h1>
-
                                     </a> </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left ">
                                     <div class="text-secondary small"><strike></strike></div> <span
@@ -447,7 +426,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
                             <a href="https://www.kalunga.com.br/prod/ima-signo-cancer-mau-imas-do-brasil-bt-1-un/488218"
@@ -463,7 +441,6 @@
                                         href="https://www.kalunga.com.br/prod/ima-signo-cancer-mau-imas-do-brasil-bt-1-un/488218"
                                         title="Imã Signo Câncer mau Imãs do Brasil BT 1 UN">
                                         <h1 class="text-left mt-2 text-dark">Imã Signo Câncer mau Imãs do Brasil BT 1 UN</h1>
-
                                     </a> </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left ">
                                     <div class="text-secondary small"><strike></strike></div> <span
@@ -487,7 +464,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
                             <a href="https://www.kalunga.com.br/prod/fone-de-ouvido-intra-1-2m-preto-ep12bk-elg-cx-1-un/282166"
@@ -496,7 +472,6 @@
                                     title="Fone de ouvido Intra 1 2m Preto EP12BK Elg CX 1 UN"
                                     class="img-prod-lazy img-fluid"
                                     src="images/282166d.png">
-
                             </a>
                         </div>
                         <div class="col col-xs-8 col-sm-8 col-md-12 col-lg-12">
@@ -529,7 +504,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
                             <a href="https://www.kalunga.com.br/prod/pincel-redondo-broxinha-tigre-pt-1-un/614167"
@@ -574,7 +548,6 @@
                     </div>
                 </div>
                 <div class="blocoproduto col-12 col-md-4 col-lg-4 col-xl-3 text-center">
-
                     <div class="row">
                         <div class="col-4 col-xs-4 col-sm-4 col-md-12 col-lg-12">
 
@@ -597,19 +570,16 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left ">
-
                                     <div class="text-secondary small"><strike></strike></div>
                                     <span class="text-primary h6">
                                         <span class="h4 font-weight-bold">R$ <span
                                                 class="font-weight-bold">17</span>,00</span>
                                     </span>
                                     <div class="text-dark font-weight-bold small"></div>
-
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 text-left ">
-
                             <div class="col comprar my-2">
                                 <div class="row">
                                     <div class="col-12 p-1">
@@ -618,11 +588,8 @@
                                             class="btn btn-primary btn-block">Comprar</a>
 
                                     </div>
-
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -649,14 +616,12 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-left ">
-
                                     <div class="text-secondary small"><strike></strike></div>
                                     <span class="text-primary h6">
                                         <span class="h4 font-weight-bold">R$ <span
                                                 class="font-weight-bold">13</span>,60</span>
                                     </span>
                                     <div class="text-dark font-weight-bold small"></div>
-
                                 </div>
                             </div>
                         </div>
@@ -674,10 +639,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
